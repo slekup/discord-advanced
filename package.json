@@ -1,6 +1,6 @@
 {
   "name": "@slekup/discord-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Slekup's discord utils package",
   "keywords": [
     "discord.js",
@@ -16,7 +16,17 @@
   },
   "license": "ISC",
   "author": "Slekup",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {},
   "files": [
     "dist"
   ],
@@ -41,13 +51,13 @@
     "useTabs": false
   },
   "dependencies": {
+    "discord.js": "^14.11.0"
+  },
+  "devDependencies": {
     "@babel/eslint-parser": "^7.22.5",
     "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
-    "discord.js": "^14.11.0"
-  },
-  "devDependencies": {
     "eslint": "^8.42.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
