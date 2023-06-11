@@ -1,7 +1,7 @@
 {
-  "name": "@slekup/discord-utils",
+  "name": "discord-advanced",
   "version": "0.0.2",
-  "description": "Slekup's discord utils package",
+  "description": "Optimize discord.js bot development with pre-made utilities and enhancements.",
   "keywords": [
     "discord.js",
     "discord",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/slekup/discord-utils"
+    "url": "https://github.com/slekup/discord-advanced"
   },
   "license": "ISC",
   "author": "Slekup",
