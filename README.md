@@ -4,7 +4,7 @@
 
 ---
 
-<a href="https://www.npmjs.com/package/express-custom" target="_blank">Documentation (soon)</a> • <a href="https://discord.gg/p5rxxQN7DT" target="_blank">Discord</a> • <a href="https://github.com/slekup/express-custom" target="_blank">GitHub</a>
+<a href="https://www.npmjs.com/package/" target="_blank">Documentation (soon)</a> • <a href="https://discord.gg/p5rxxQN7DT" target="_blank">Discord</a> • <a href="https://github.com/slekup/discord-advanced" target="_blank">GitHub</a>
 
 ---
 
