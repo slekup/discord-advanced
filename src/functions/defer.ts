@@ -6,6 +6,15 @@ export interface DeferProps {
   selectMenuReply?: boolean;
 }
 
+export type DeferType = (
+  interaction: BaseInteraction,
+  props?: {
+    ephemeral?: boolean;
+    buttonReply?: boolean;
+    selectMenuReply?: boolean;
+  }
+) => Promise<Message | InteractionResponse | undefined>;
+
 /**
  * An adaptable version of interaction.deferReply() to defer any interaction.
  * @param interaction The interaction to defer.

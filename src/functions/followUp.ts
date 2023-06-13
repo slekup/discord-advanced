@@ -9,6 +9,21 @@ import {
   Message,
 } from 'discord.js';
 
+export interface FollowUpProps {
+  content?: string;
+  embeds?: EmbedBuilder[];
+  components?: ActionRowBuilder[];
+  files?: AttachmentBuilder[];
+  ephemeral?: boolean;
+  buttonReply?: boolean;
+  selectMenuReply?: boolean;
+}
+
+export type FollowUpType = (
+  interaction: BaseInteraction,
+  props: FollowUpProps
+) => Promise<Message | InteractionResponse | undefined>;
+
 /**
  * An adaptable version of interaction.followUp() to follow up any interaction after a defer.
  * @param interaction The interaction to followup.
@@ -24,15 +39,7 @@ import {
  */
 export default async (
   interaction: BaseInteraction,
-  props: {
-    content?: string;
-    embeds?: EmbedBuilder[];
-    components?: ActionRowBuilder[];
-    files?: AttachmentBuilder[];
-    ephemeral?: boolean;
-    buttonReply?: boolean;
-    selectMenuReply?: boolean;
-  }
+  props: FollowUpProps
 ): Promise<Message | InteractionResponse | undefined> => {
   const newProps = {
     content: props.content ?? '',

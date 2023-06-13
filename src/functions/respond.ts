@@ -22,6 +22,11 @@ export interface RespondProps {
   deleteAfter?: number;
 }
 
+export type RespondType = (
+  interaction: BaseInteraction | Message,
+  props: RespondProps
+) => Promise<Message | InteractionResponse | undefined>;
+
 /**
  * An adaptable version of interaction.reply() to respond to any interaction.
  * @param interaction The interaction to respond to.
