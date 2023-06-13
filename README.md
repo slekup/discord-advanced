@@ -45,8 +45,11 @@ const { DiscordLogger } = require('discord-advanced');
 
 ## Functions
 
-| Function | Description |
-| -------- | ----------- |
+| Function   | Description                                                                                |
+| ---------- | ------------------------------------------------------------------------------------------ |
+| `defer`    | An adaptable version of interaction.deferReply() to defer any interaction.                 |
+| `followUp` | An adaptable version of interaction.followUp() to follow up any interaction after a defer. |
+| `respond`  | An adaptable version of interaction.reply() to respond to any interaction.                 |
 
 ## Classes
 
