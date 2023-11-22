@@ -1,6 +1,7 @@
-.github/
-.husky/
-.vscode/
-dist/
 node_modules/
-package-lock.json
+target/
+.next/
+build/
+dist/
+out/
+coverage/

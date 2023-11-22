@@ -1,25 +1,30 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "pattern": "./src/*"
-    }
-  ],
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": false
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never"
   },
   "editor.trimAutoWhitespace": false,
   "files.associations": {
-    "*.mdx": "markdown"
+    "*.mdx": "mdx"
   },
   "files.insertFinalNewline": true,
   "files.eol": "\n",
+  "eslint.workingDirectories": [
+    {
+      "pattern": "./"
+    }
+  ],
+  "eslint.validate": [
+    "css",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "yaml",
+    "markdown"
+  ]
 }
