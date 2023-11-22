@@ -49,9 +49,12 @@ class LogLevel {
     this.queue = [];
     if (options.customQueue) this.customQueue = options.customQueue;
 
-    setInterval(() => {
-      this.send();
-    }, options.interval ?? 1000 * 1);
+    setInterval(
+      () => {
+        this.send();
+      },
+      options.interval ?? 1000 * 1
+    );
   }
 
   /**
