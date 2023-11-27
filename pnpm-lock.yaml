@@ -30,7 +30,7 @@ devDependencies:
     version: 8.54.0
   eslint-config-slekup:
     specifier: ^1.0.15
-    version: 1.0.15(@babel/core@7.23.3)(eslint@8.54.0)(typescript@5.3.2)
+    version: 1.0.22(@babel/core@7.23.3)(eslint@8.54.0)(typescript@5.3.2)
   husky:
     specifier: ^8.0.3
     version: 8.0.3
@@ -2171,8 +2171,8 @@ packages:
       eslint: 8.54.0
     dev: true
 
-  /eslint-config-slekup@1.0.15(@babel/core@7.23.3)(eslint@8.54.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-SDdCg81oPaxcHvPJS/Sdo0IPrmOKQi3x/qJxujDMakMflGo+7m/SVjkLmfu9kBiMl5bR9gx9vjCAzFQY32OrPg==}
+  /eslint-config-slekup@1.0.22(@babel/core@7.23.3)(eslint@8.54.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-XoX+LearEbCPjdKyoP1FHqMSNwfwJ3FANgODCVsFldJoXxhyR9yAs2la9TnfolicTB2NVAjgZGiyj5Lh2ta8bA==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
